@@ -2,9 +2,9 @@
 int main(void)
 {
 char letter;
-for (ch == 'a'; ch <= 'z'; ch++)
+for (letter == 'a'; letter <= 'z'; letter++)
 {       
-putchar(ch);
+putchar(letter);
 }       
 putchar('\n');
 return (0);
