@@ -14,7 +14,7 @@ if (lett != 'e' && lett != 'q')
 putchar(lett);
 }
 lett++;
-} 
+}
 putchar('\n');
 return (0);
 }
