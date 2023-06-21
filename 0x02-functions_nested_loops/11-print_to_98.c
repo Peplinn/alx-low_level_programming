@@ -19,7 +19,7 @@ i++;
 else if (i >= 98) {
 while (i > 98) {
 printf("%d, ", i);
-i++;
+i--;
 }
 }
 printf("98\n");
