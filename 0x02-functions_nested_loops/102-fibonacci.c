@@ -11,8 +11,6 @@ int limit = 4000000;
 int i;
 unsigned long int fib1 = 1, fib2 = 2, fib;
 
-printf("%lu, %lu", fib1, fib2);
-
 for (i = 3; i <= limit; i++)
 {
 if (fib1 + fib2 <= 4000000)
