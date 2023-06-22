@@ -2,8 +2,6 @@
 
 /**
 * print_numbers - multiplies two integers
-*
-* Return: the result of the multiplication
 */
 void print_numbers(void)
 {
