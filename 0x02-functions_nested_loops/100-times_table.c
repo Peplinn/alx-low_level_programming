@@ -6,7 +6,7 @@
 * @n: print to this number
 */
 
-void times_table(int n)
+void times_table(void)
 {
 int i, j, c;
 for (i = 0; i <= n; i++)
