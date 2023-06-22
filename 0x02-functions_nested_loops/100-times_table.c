@@ -19,13 +19,13 @@ for (j = 1; j <= n; j++)
 {
 if (j < n)
 {
-_putchar('c');
+_putchar(c);
 _putchar(',');
 _putchar(' ');
 }
 else
 {
-_putchar('c');
+_putchar(c);
 _putchar('\n');
 }
 c += c;

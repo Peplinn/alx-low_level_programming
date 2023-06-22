@@ -23,7 +23,7 @@ fib2 = fib;
 }
 }
 else if (fib > 4000000)
-break
+break;
 }
 
 printf("%lu", fib);
