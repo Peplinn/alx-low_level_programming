@@ -17,7 +17,7 @@ return;
 for (i = 1; i <= size; i++)
 {
 spaceNum = size - i;
-for (j = 0; j <= spaceNum; j++)
+for (j = 0; j < spaceNum; j++)
 {
 _putchar(' ');
 }
