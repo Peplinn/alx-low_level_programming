@@ -1,5 +1,14 @@
 #include <stdio.h>
-
+/**
+* main - Entry point of the program
+*
+* Description: This function is the entry point of the program.
+* It prints numbers from 1 to 100, replacing multiples of 3 with "Fizz",
+* multiples of 5 with "Buzz", and multiples of both 3 and 5 with "FizzBuzz".
+* The numbers or words are separated by a space and followed by a new line.
+*
+* Return: Always 0 (indicating successful execution)
+*/
 int main(void)
 {
 int i;
@@ -18,5 +27,5 @@ printf("%d ", i);
 
 printf("\n");
 
-return 0;
+return (0);
 }
