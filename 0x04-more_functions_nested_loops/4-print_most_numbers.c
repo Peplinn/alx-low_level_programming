@@ -14,9 +14,9 @@ if (n == 2 || n == 4)
 continue;
 else
 {
-_putchar(n);
-n++;
+_putchar('0' + n);
 }
+n++;
 }
 _putchar('\n');
 }
