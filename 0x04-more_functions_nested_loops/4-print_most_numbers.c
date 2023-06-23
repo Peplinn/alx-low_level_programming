@@ -11,7 +11,7 @@ n = 0;
 while (n < 10)
 {
 if (n == 2 || n == 4)
-continue
+continue;
 else
 {
 _putchar(n);
