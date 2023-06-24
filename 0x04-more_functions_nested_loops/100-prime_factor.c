@@ -7,9 +7,9 @@
 * Return: The largest prime factor of the number
 */
 
-long long largest_prime_factor(long long number)
+unsigned long largest_prime_factor(unsigned long number)
 {
-long long divisor = 2;
+unsigned long divisor = 2;
 
 while (number > 1)
 {
@@ -34,10 +34,10 @@ return (divisor);
 
 int main(void)
 {
-long long number = 612852475143;
-long long largest_factor = largest_prime_factor(number);
+unsigned long number = 612852475143;
+unsigned long largest_factor = largest_prime_factor(number);
 
-printf("Largest prime factor of %lld is %lld\n", number, largest_factor);
+printf("Largest prime factor of %lu is %lu\n", number, largest_factor);
 
 return (0);
 }
