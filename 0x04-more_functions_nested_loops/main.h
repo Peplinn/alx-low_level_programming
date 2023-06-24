@@ -18,6 +18,6 @@ void print_square(int size);
 void print_triangle(int size);
 int _putchar(char c);
 unsigned long largest_prime_factor(unsigned long number);
-void print_number(void);
+void print_number(int n);
 
 #endif /* MAIN_H */
