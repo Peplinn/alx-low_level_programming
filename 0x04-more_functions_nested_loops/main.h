@@ -19,7 +19,7 @@ void print_square(int size);
 void print_triangle(int size);
 int _putchar(char c);
 long long largest_prime_factor(long long number);
-void print_number(int n);
+void print_number(void);
 //int abs(int n);
 
 #endif /* MAIN_H */
