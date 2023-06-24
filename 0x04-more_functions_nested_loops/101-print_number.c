@@ -3,7 +3,6 @@
 /**
 * print_number - Prints an integer using _putchar
 * @n: The integer to be printed
-* @a: holder variabe
 *
 * Description: This function prints an integer using the _putchar function.
 * If the integer is negative, it prints a minus sign before the absolute value.
@@ -13,8 +12,8 @@
 
 void print_number(int n)
 {
-    unsigned int k;
-    unsigned int k = n;
+unsigned int k;
+unsigned int k = n;
 if (n == 0)
 {
 _putchar('0');
@@ -24,7 +23,7 @@ return;
 if (n < 0)
 {
 _putchar('-');
-k = abs(n);
+k = n;
 }
 
 if (k / 10 != 0)
