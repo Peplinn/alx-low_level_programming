@@ -21,7 +21,7 @@ return;
 if (n < 0)
 {
 _putchar('-');
-n = abs(n);
+n = -n;
 }
 
 if (n / 10 != 0)

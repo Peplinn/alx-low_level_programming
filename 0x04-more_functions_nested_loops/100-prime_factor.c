@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+* largest_prime_factor - Finds the largest prime factor of a number
+* @number: The number to find the largest prime factor for
+*
+* Return: The largest prime factor of the number
+*/
+
 long long largest_prime_factor(long long number)
 {
 long long divisor = 2;
@@ -16,15 +23,21 @@ divisor++;
 }
 }
 
-return divisor;
+return (divisor);
 }
 
-int main()
+/**
+* main - Entry point of the program
+*
+* Return: Always 0 (indicating successful execution)
+*/
+
+int main(void)
 {
 long long number = 612852475143;
 long long largest_factor = largest_prime_factor(number);
 
 printf("Largest prime factor of %lld is %lld\n", number, largest_factor);
 
-return 0;
+return (0);
 }
