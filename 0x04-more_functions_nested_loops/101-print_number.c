@@ -13,7 +13,7 @@
 void print_number(int n)
 {
 unsigned int k;
-unsigned int k = n;
+k = n;
 if (n == 0)
 {
 _putchar('0');
@@ -23,7 +23,7 @@ return;
 if (n < 0)
 {
 _putchar('-');
-k = n;
+k = -n;
 }
 
 if (k / 10 != 0)
