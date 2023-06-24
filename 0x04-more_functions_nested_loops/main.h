@@ -2,7 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 
 int _isupper(int c);
 void positive_or_negative(int i);
@@ -20,6 +20,6 @@ void print_triangle(int size);
 int _putchar(char c);
 long long largest_prime_factor(long long number);
 void print_number(void);
-//int abs(int n);
+int abs(int n);
 
 #endif /* MAIN_H */
