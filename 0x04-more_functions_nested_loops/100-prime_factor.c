@@ -37,7 +37,7 @@ int main(void)
 unsigned long number = 612852475143;
 unsigned long largest_factor = largest_prime_factor(number);
 
-printf("Largest prime factor of %lu is %lu\n", number, largest_factor);
+printf("%lu\n", largest_factor);
 
 return (0);
 }
