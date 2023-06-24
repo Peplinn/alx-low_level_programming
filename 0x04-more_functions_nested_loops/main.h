@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int _isupper(int c);
 void positive_or_negative(int i);
@@ -17,5 +18,7 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 int _putchar(char c);
+void print_number(int n);
+int abs(int n);
 
 #endif /* MAIN_H */

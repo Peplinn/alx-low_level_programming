@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+* print_number - Prints an integer using _putchar
+* @n: The integer to be printed
+*
+* Description: This function prints an integer using the _putchar function.
+* If the integer is negative, it prints a minus sign before the absolute value.
+* It recursively prints each digit of the number starting from the most
+* significant digit.
+*/
+
+void print_number(int n)
+{
+if (n == 0)
+{
+_putchar('0');
+return;
+}
+
+if (n < 0)
+{
+_putchar('-');
+n = abs(n);
+}
+
+if (n / 10 != 0)
+{
+print_number(n / 10);
+}
+
+_putchar(n % 10 + '0');
+}
