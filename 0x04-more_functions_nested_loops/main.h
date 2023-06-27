@@ -21,3 +21,6 @@ unsigned long largest_prime_factor(unsigned long number);
 void print_number(int n);
 
 #endif /* MAIN_H */
+
+
+0x04-more_functions_nested_loops/main.h

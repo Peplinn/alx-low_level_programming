@@ -7,33 +7,39 @@
 * Return: The converted integer
 */
 
-int _atoi(char *s)
-{
-int sign = 1;
-int result = 0;
-int digit;
+int _atoi(char *str) {
+    int sign = 1;
+    int result = 0;
+    int i = 0;
 
-if (*s == '-')
-{
-sign = -1;
-s++;
-}
+    // Define isspace function
+    int isspace(char c) {
+        return c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r';
+    }
 
-while (*s)
-{
+    // Define isdigit function
+    int isdigit(char c) {
+        return c >= '0' && c <= '9';
+    }
 
-if (*s >= '0' && *s <= '9')
-{
+    // Skip leading whitespace
+    while (isspace(str[i])) {
+        i++;
+    }
 
-digit = *s - '0';
-result = result * 10 + (sign * digit);
-}
+    // Handle sign
+    if (str[i] == '-' || str[i] == '+') {
+        if (str[i] == '-') {
+            sign = -1;
+        }
+        i++;
+    }
 
-else
-{
-break;
-}
-s++;
-}
-return (result);
+    // Convert digits to integer
+    while (isdigit(str[i])) {
+        result = result * 10 + (str[i] - '0');
+        i++;
+    }
+
+    return sign * result;
 }
