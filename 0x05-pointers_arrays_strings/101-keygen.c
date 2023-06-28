@@ -1,24 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 8
+/**
+* main - Generate a random pword for the 101-crackme
+*
+* Return: 0 (Success)
+*/
 
-int main() {
+int main(void)
+{
+int pword[64], i, sum = 0, n;
 
 srand(time(NULL));
-
-char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-char password[PASSWORD_LENGTH + 1];
-for (int i = 0; i < PASSWORD_LENGTH; i++)
+for (i = 0; i < 64; i++)
 {
-int random_index = rand() % (sizeof(valid_chars) - 1);
-password[i] = valid_chars[random_index];
+pword[i] = rand() % 78;
+sum+= pword[i] + '0';
+putchar(pword[i] + '0');
+
+if ((2772 - sum) - '0' < 78)
+{
+n = 2772 - sum - '0';
+sum += n;
+putchar(n + '0');
+break;
 }
-password[PASSWORD_LENGTH] = '\0';
-
-printf("%s\n", password);
-
+}
 return (0);
 }
