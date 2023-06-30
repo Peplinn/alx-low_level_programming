@@ -4,6 +4,7 @@
 * _strcat - Appends string at src to that at dest
 * @dest: Pointer to destination string
 * @src: Pointer to source string
+* Return: dest
 */
 
 char *_strcat(char *dest, char *src)
@@ -19,4 +20,5 @@ src++;
 }
 
 dest = '\0';
+return (dest);
 }
