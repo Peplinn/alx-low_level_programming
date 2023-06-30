@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
 * print_buffer - Prints the content of a buffer
@@ -32,19 +31,12 @@ if (j % 2 != 0)
 printf(" ");
 }
 
-for (j = 0; j < 10; j++)
+for (j = 0; j < 10 && i + j < size; j++)
 {
-if (i + j < size)
-{
-if (isprint(b[i + j]))
+if (b[i + j] > 31 && b[i + j] < 126)
 printf("%c", b[i + j]);
 else
 printf(".");
-}
-else
-{
-printf(" ");
-}
 }
 
 printf("\n");
