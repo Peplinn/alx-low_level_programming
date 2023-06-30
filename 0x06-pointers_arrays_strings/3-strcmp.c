@@ -2,6 +2,7 @@
 
 /**
 * _strcmp - Compares str at s1 to that at s2
+* 
 * @s1: Pointer to first compared string
 * @s2: Pointer to second compared string
 * Return: 0 if s1 = s2,
