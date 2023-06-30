@@ -33,7 +33,9 @@ dest++;
 originalSrc++;
 i++;
 }
-} else {
+}
+else
+{
 while (i < n && *originalSrc != '\0')
 {
 *dest = *originalSrc;
