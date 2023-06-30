@@ -15,15 +15,15 @@ char *originalDest = dest;
 while (*src != '\0' && n > 0)
 {
 *dest = *src;
-*src++;
-*dest++;
+src++;
+dest++;
 n--;
 }
 
 while (n > 0)
 {
 *dest = '\0';
-*dest++;
+dest++;
 n--;
 }
 
