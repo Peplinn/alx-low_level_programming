@@ -15,7 +15,7 @@ return (NULL);
 while (*s != '\0')
 {
 if (*s == c)
-return (s);
+return (*s);
 else
 s++;
 }
