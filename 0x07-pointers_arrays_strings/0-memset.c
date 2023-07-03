@@ -17,5 +17,5 @@ while (n > 0)
 t++;
 n--;
 }
-return (*t);
+return s;
 }
