@@ -5,6 +5,7 @@
 * @s: memory area
 * @b: constant char
 * @n: number of bytes
+* Return: Pointer to s
 */
 
 char *_memset(char *s, char b, unsigned int n)
