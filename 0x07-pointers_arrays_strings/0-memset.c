@@ -2,9 +2,9 @@
 
 /**
 * _memset - replaces char at s with b, n times
-* @s: pointer to address
-* @b: replacement char
-* @n: times to replace
+* @s: memory area
+* @b: constant char
+* @n: number of bytes
 */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -16,5 +16,5 @@ while (n > 0)
 t++;
 n--;
 }
-return *t;
+return (*t);
 }
