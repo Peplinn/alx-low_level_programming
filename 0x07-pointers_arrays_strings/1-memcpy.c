@@ -2,8 +2,8 @@
 
 /**
 * _memcpy - replaces char at dest with src, n times
-* @t: pointer to dest
-* @s: replacement src
+* @dest: pointer to dest
+* @src: replacement src
 * @n: times to replace
 * Return: pointer to dest
 */
@@ -14,10 +14,10 @@ char *s = src;
 char *t = dest;
 while (n > 0)
 {
-*s = *t;
+*t = *s;
 s++;
 t++;
 n--;
 }
-return dest;
+return (dest);
 }
