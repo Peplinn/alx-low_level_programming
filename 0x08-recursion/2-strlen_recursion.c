@@ -14,6 +14,6 @@ putchar('0' + c);
 }else
 {
 c++;
-_puts_recursion(s+1);
+_strlen_recursion(s+1);
 }
 }
