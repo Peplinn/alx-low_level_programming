@@ -3,15 +3,15 @@
 /**
 * _strlen_recursion - prints string length
 * @s: pointer to string
+* Return: length
 */
 
 int c = 0;
 int _strlen_recursion(char *s);
 {
 if(*s == '\0')
-{
 return (c);
-}else
+else
 {
 c++;
 _strlen_recursion(s+1);
