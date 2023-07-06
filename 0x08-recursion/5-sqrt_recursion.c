@@ -2,7 +2,7 @@
 
 /**
 * _sqrt_recursion - sends to helper
-* @n - number to root
+* @n: number to root
 * Return: 0 if zero,
 * -1 if negative,
 * 1 if one,
@@ -18,13 +18,13 @@ return (-1);
 else if (n == 1)
 return (1);
 else
-return(sqrt_helper(n, 1));
+return (sqrt_helper(n, 1));
 }
 
 /**
 * sqrt_helper - sends to helper
-* @a - guess num
-* @n - number to root
+* @a: guess num
+* @n: number to root
 * Return: -1 if guess > root,
 * else, root.
 */
