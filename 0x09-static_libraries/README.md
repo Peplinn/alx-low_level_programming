@@ -1,0 +1,1 @@
+C Libraries: Static and Dynamic(Shared). Very cool.
