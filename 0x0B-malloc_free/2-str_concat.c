@@ -10,21 +10,23 @@
 
 char *str_concat(char *s1, char *s2)
 {
+char s1tmp = s1;
+char s2tmp = s2;
 char *strNew;
 int i, length, length1, length2 = 0;
 if (s1 == NULL)
 return (NULL);
-while (*s1 != '\0')
+while (*s1tmp != '\0')
 {
 length1++;
-s1++;
+s1tmp++;
 }
 if (s2 == NULL)
 return (NULL);
-while (*s2 != '\0')
+while (*s2tmp != '\0')
 {
 length2++;
-s2++;
+s2tmp++;
 }
 length = length1 = length2;
 strNew = malloc(sizeof(char) * length + 1);
