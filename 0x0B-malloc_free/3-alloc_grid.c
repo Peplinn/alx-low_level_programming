@@ -1,35 +1,41 @@
 #include "main.h"
 
 /**
-* _strdup - duplicates given string, mallocs(str)
-* @str: pointer to string
+* alloc_grid - creates int array
+* @width: width
+* @height: height
 * Return: NULL if NULL
 * else, pointer to new memory address (str2)
 */
 
 int **alloc_grid(int width, int height)
 {
-char *str2;
+int **arr;
+int i, j = 0;
 
-int i, length = 0;
-
-if (*str == NULL)
+if (width <= 0 || height <= 0)
 return (NULL);
-while (*str != '\0')
+if (arr == NULL)
+return(NULL);
+
+arr = malloc(sizeof(int) * height);
+
+while (i < height)
 {
-length++;
-str++;
+arr[i] = malloc(sizeof(int) * width);
+if (arr[i] == NULL)
+{
+for (j = 0; j < i; j++)
+free(arr[j]);
+free(arr);
+return (NULL);
 }
 
-str2 = malloc(sizeof(char) * length);
-if (str2 = NULL)
-return (NULL);
-
-while (i < length)
+while (i < width)
 {
-str2[i] = str[i];
-i++;
+arr[i][j] = 0;
 }
-str2[i] = '\0';
-return (str2);
+free(arr);
+return (arr);
+}
 }

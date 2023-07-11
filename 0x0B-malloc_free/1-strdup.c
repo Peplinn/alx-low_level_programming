@@ -13,7 +13,7 @@ char *str2;
 
 int i, length = 0;
 
-if (*str == NULL)
+if (str == NULL)
 return (NULL);
 while (*str != '\0')
 {
@@ -22,7 +22,7 @@ str++;
 }
 
 str2 = malloc(sizeof(char) * length);
-if (str2 = NULL)
+if (str2 == NULL)
 return (NULL);
 
 while (i < length)
