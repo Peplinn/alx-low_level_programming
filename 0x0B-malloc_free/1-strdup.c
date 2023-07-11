@@ -31,6 +31,5 @@ str2[i] = str[i];
 i++;
 }
 str2[i] = '\0';
-free(str2);
 return (str2);
 }

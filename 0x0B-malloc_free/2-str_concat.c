@@ -42,6 +42,5 @@ strNew[i] = s2[i];
 i++;
 }
 strNew[i] = '\0';
-free(strNew);
 return (strNew);
 }

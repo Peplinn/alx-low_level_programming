@@ -21,6 +21,5 @@ ch[i] = c;
 i++;
 }
 ch[i] = '\0';
-free(ch);
 return (ch);
 }
