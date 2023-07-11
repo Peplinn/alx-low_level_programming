@@ -27,8 +27,8 @@ length2++;
 s2++;
 }
 length = length1 = length2;
-strNew = malloc(sizeof(char) * length);
-if (strNew = NULL)
+strNew = malloc(sizeof(char) * length + 1);
+if (strNew == NULL)
 return (NULL);
 while (i < length1)
 {

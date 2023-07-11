@@ -35,7 +35,7 @@ while (i < width)
 {
 arr[i][j] = 0;
 }
+}
 free(arr);
 return (arr);
-}
 }
