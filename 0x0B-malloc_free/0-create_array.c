@@ -14,7 +14,7 @@ char *ch;
 unsigned int i;
 if (size <= 0)
 return (NULL);
-ch = malloc(sizeof(char) * size + 1);
+ch = malloc(sizeof(char) * size);
 if (ch == NULL)
 return (NULL);
 while (i < size)
