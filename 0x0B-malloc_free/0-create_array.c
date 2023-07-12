@@ -14,9 +14,9 @@ char *ch;
 unsigned int i;
 if (size <= 0)
 return (NULL);
+ch = malloc(sizeof(char) * size + 1);
 if (ch == NULL)
 return (NULL);
-ch = malloc(sizeof(char) * size + 1);
 while (i < size)
 {
 ch[i] = c;
