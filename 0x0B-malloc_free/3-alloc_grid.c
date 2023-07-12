@@ -20,7 +20,7 @@ if (grid == NULL)
 return(NULL);
 while (i < height)
 {
-grid[i] = malloc(sizeof(int) * width);
+grid = malloc(sizeof(int) * width);
 if (grid[i] == NULL)
 {
 for (j = 0; j < i; j++)

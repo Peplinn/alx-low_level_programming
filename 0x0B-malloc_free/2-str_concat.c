@@ -10,8 +10,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char s1tmp = s1;
-char s2tmp = s2;
+char *s1tmp = s1;
+char *s2tmp = s2;
 char *strNew;
 int i, length, length1, length2 = 0;
 if (s1 == NULL)
