@@ -13,7 +13,9 @@ char *str_concat(char *s1, char *s2)
 char *s1tmp = s1;
 char *s2tmp = s2;
 char *strNew;
-int i, length, length1, length2 = 0;
+int i, length = 0;
+int length1 = 0;
+int length2 = 0;
 if (s1 == NULL)
 return (NULL);
 while (*s1tmp != '\0')
@@ -28,7 +30,7 @@ while (*s2tmp != '\0')
 length2++;
 s2tmp++;
 }
-length = length1 = length2;
+length = length1 + length2;
 strNew = malloc(sizeof(char) * length + 1);
 if (strNew == NULL)
 return (NULL);

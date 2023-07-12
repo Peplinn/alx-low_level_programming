@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* alloc_grid - creates int array
+* alloc_grid - creates 2d int array
 * @width: width
 * @height: height
 * Return: NULL if NULL
@@ -11,7 +11,8 @@
 int **alloc_grid(int width, int height)
 {
 int **grid;
-int i, j = 0;
+int i = 0;
+int j = 0;
 
 if (width <= 0 || height <= 0)
 return (NULL);
@@ -20,7 +21,7 @@ if (grid == NULL)
 return(NULL);
 while (i < height)
 {
-grid = malloc(sizeof(int) * width);
+grid[i] = malloc(sizeof(int) * width);
 if (grid[i] == NULL)
 {
 for (j = 0; j < i; j++)
@@ -28,12 +29,12 @@ free(grid[j]);
 free(grid);
 return (NULL);
 }
-
-while (i < width)
+while (j < width)
 {
 grid[i][j] = 0;
+j++;
 }
+i++;
 }
-free(grid);
 return (grid);
 }
