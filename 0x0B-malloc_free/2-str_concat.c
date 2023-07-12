@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strdup - concats given strings, mallocs(str)
+* str_concat - concats given strings, mallocs(str)
 * @s1: pointer to string1
 * @s2: pointer to string2
 * Return: NULL if NULL
