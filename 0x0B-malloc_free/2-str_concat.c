@@ -42,9 +42,9 @@ i++;
 i = 0;
 while (i < length2)
 {
-strNew[i] = s2[i];
+strNew[length1 + i] = s2[i];
 i++;
 }
-strNew[i] = '\0';
+strNew[length] = '\0';
 return (strNew);
 }

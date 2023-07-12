@@ -16,12 +16,13 @@ int j = 0;
 
 if (width <= 0 || height <= 0)
 return (NULL);
-grid = malloc(sizeof(int) * height);
+grid = malloc(sizeof(int *) * height);
 if (grid == NULL)
-return(NULL);
+return (NULL);
 while (i < height)
 {
 grid[i] = malloc(sizeof(int) * width);
+
 if (grid[i] == NULL)
 {
 for (j = 0; j < i; j++)
