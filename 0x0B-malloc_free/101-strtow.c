@@ -2,7 +2,7 @@
 
 /**
 * strtow - splits a string into words array
-* @str: tring to split
+* @str: string to split
 * Return: NULL
 * else, words
 */
