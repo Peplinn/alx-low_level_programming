@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * array_range - creates an array of integers
- * @min: min num
- * @max: max num
- * Return: NULL if min > max or malloc fails
- * else, *arr
- */
+* array_range - creates an array of integers
+* @min: min num
+* @max: max num
+* Return: NULL if min > max or malloc fails
+* else, *arr
+*/
 
 int *array_range(int min, int max)
 {
