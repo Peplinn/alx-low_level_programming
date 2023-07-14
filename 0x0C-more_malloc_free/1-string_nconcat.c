@@ -4,7 +4,7 @@
 * string_nconcat - concats given strings, mallocs(str)
 * @s1: pointer to string1
 * @s2: pointer to string2
-* @n: number of chars (of s2)
+* @n: number of chars of s2
 * Return: NULL if NULL
 * else, pointer to new memory address (str)
 */
@@ -21,7 +21,7 @@ for (i = 0; s1[i]; i++)
 len1++;
 for (i = 0; s2[i]; i++)
 len2++;
-if (n >= len2)
+if (m >= len2)
 str = malloc(sizeof(char) * (len1 + len2 + 1));
 else
 str = malloc(sizeof(char) * (len1 + n + 1));
@@ -29,7 +29,7 @@ if (str == NULL)
 return (NULL);
 for (i = 0; s1[i]; i++)
 str[i] = s1[i];
-if (n >= len2)
+if (m >= len2)
 {
 for (i = 0; s2[i]; i++)
 str[len1 + i] = s2[i];
