@@ -1,0 +1,1 @@
+Singly linked lists: Another lesson on data structures.

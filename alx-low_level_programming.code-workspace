@@ -7,5 +7,10 @@
 			"path": "../ALX Tests"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.html": "html",
+			"test1print": "c"
+		}
+	}
 }
