@@ -9,18 +9,18 @@
 void free_listint(listint_t *head)
 {
 
-listint_t *position, *next_node;
+listint_t *position;
 
 if (head == NULL)
 return;
 
 position = head;
 
-while (position->next != NULL)
+while (head != NULL)
 {
-next_node = position->next;
-free(position);
-position = next_node;
+position = head->next;
+free(head);
+head = position;
 
 }
 return;
