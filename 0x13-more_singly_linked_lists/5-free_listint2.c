@@ -16,7 +16,7 @@ return;
 
 while (*head != NULL)
 {
-position = *head->next;
+position = (*head)->next;
 free(*head);
 *head = position;
 
