@@ -13,11 +13,11 @@ listint_t *position;
 int head_val;
 
 if (*head == NULL)
-return (NULL);
+return (0);
 
 position = *head;
-head_val = *head->n;
-*head = *head->next;
+head_val = (*head)->n;
+*head = (*head)->next;
 free(position);
 
 return (head_val);
