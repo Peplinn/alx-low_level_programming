@@ -8,23 +8,21 @@
 
 void free_listint(listint_t *head)
 {
-    
-    listint_t *position, *next_node;
 
-    if (head == NULL)
-    {
-    return;
-    }
+listint_t *position, *next_node;
 
-    position = head;
-    
-    while (position->next != NULL)
-    {
-        next_node = position->next;
-        free (position);
-        position = next_node;
-    
-    }
-    return;
-    
+if (head == NULL)
+return;
+
+position = head;
+
+while (position->next != NULL)
+{
+next_node = position->next;
+free(position);
+position = next_node;
+
+}
+return;
+
 }
