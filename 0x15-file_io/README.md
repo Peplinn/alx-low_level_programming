@@ -1,1 +1,0 @@
-This is the File I/O project. Dealing with file descriptors, file access modes and file handling operations.
