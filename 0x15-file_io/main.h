@@ -14,18 +14,6 @@
 
 /* Macros */
 #define BUFFSIZE 1024
-
-/* Main Functions */
-ssize_t read_textfile(const char *filename, size_t letters);
-int create_file(const char *filename, char *text_content);
-int append_text_to_file(const char *filename, char *text_content);
-void print_error(const char *msg);
-void print_elf_header(const Elf64_Ehdr *header);
-
-/* Help Functions */
-int _strlen(char *str);
-void print_exit(int code, const char *msg, const char *file);
-
 #define ELF_MAGIC_SIZE 4
 
 /**
@@ -64,5 +52,19 @@ typedef struct Elf64_Ehdr
 	uint16_t e_shnum;
 	uint16_t e_shstrndx;
 } Elf64_Ehdr;
+
+/* Main Functions */
+ssize_t read_textfile(const char *filename, size_t letters);
+int create_file(const char *filename, char *text_content);
+int append_text_to_file(const char *filename, char *text_content);
+void print_error(const char *msg);
+void print_elf_header(const Elf64_Ehdr *header);
+
+/* Help Functions */
+int _strlen(char *str);
+void print_exit(int code, const char *msg, const char *file);
+
+#define ELF_MAGIC_SIZE 4
+
 
 #endif /* MAIN_H */
